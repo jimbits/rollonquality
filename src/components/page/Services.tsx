@@ -1,198 +1,219 @@
-import {cn} from '@/lib/utils'
+import { cn } from "@/lib/utils";
 
 function Services() {
-	return (
-		<section className="text-gray-600 body-font">
-			<div className="container px-5 py-24 mx-auto">
-				<header className=" mb-20">
-					<h2 className="text-4xl font-bold text-center text-zinc-700 mb-2">
-						Our Edmonton Home Painting Services
-					</h2>
+  return (
+    <section className="body-font text-gray-600">
+      <div className="container mx-auto px-5 py-24">
+        <header className="mb-20">
+          <h2 className="mb-2 text-center text-3xl font-bold text-zinc-700">
+            Our Edmonton Home Painting Services
+          </h2>
 
-					<p className="text-base text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-						Professional interior and exterior home painting services for Edmonton residents,
-						delivering quality craftsmanship with guaranteed results every time.
-					</p>
-					<div className="flex mt-6 justify-center">
-						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-					</div>
-				</header>
-				<div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-					{/* Inerior House Painting */}
-					<div className="p-4 md:w-1/2 flex flex-col text-center items-center">
-						<div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-							<svg
-								fill="none"
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								className="w-10 h-10"
-								viewBox="0 0 24 24"
-							>
-								<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-							</svg>
-						</div>
-						<div className="flex-grow">
-							<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-								Interior House Painting Edmonton
-							</h2>
+          <p className="text-gray-500s mx-auto text-center text-base leading-relaxed lg:w-3/4 xl:w-2/4">
+            Professional interior and exterior home painting services for
+            Edmonton residents, delivering quality craftsmanship with guaranteed
+            results every time.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <div className="inline-flex h-1 w-16 rounded-full bg-indigo-500"></div>
+          </div>
+        </header>
+        <div className="-mx-4 -mt-4 -mb-10 flex flex-wrap space-y-6 sm:-m-4 md:space-y-0">
+          {/* Inerior House Painting */}
+          <div className="flex max-w-[500px] flex-col items-center p-4 text-center sm:text-left">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1756260161/roll-on-painting/faux_ujnvjv.jpg"
+              />
 
-							<p className="leading-relaxed text-base  ">
-								Professional interior house painting services for Edmonton homes including walls,
-								ceilings, trim, cabinets, and specialty finishes with guaranteed quality
-								craftsmanship results.
-							</p>
+              <source
+                media="(min-width: 640px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1756260161/roll-on-painting/faux_ujnvjv.jpg"
+              />
 
-							<a className="mt-3 text-indigo-500 inline-flex items-center">
-								Learn More
-								<svg
-									fill="none"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									className="w-4 h-4 ml-2"
-									viewBox="0 0 24 24"
-								>
-									<path d="M5 12h14M12 5l7 7-7 7"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-					{/* Exterior House Painting */}
-					<div className="p-4 md:w-1/2 flex flex-col text-center items-center">
-						<div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-							<svg
-								fill="none"
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								className="w-10 h-10"
-								viewBox="0 0 24 24"
-							>
-								<circle cx="6" cy="6" r="3"></circle>
-								<circle cx="6" cy="18" r="3"></circle>
-								<path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-							</svg>
-						</div>
-						<div className="flex-grow">
-							<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-								Exterior Home Painting Services
-							</h2>
-							<p className="leading-relaxed text-base">
-								Professional exterior home painting services for Edmonton properties including house
-								siding, decks, fences, garage doors, and pressure washing with weatherproof
-								protection guaranteed.
-							</p>
-							<a className="mt-3 text-indigo-500 inline-flex items-center">
-								Learn More
-								<svg
-									fill="none"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									className="w-4 h-4 ml-2"
-									viewBox="0 0 24 24"
-								>
-									<path d="M5 12h14M12 5l7 7-7 7"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-					{/* Specialty Painting */}
-					<div className="p-4 md:w-1/2 flex flex-col text-center items-center">
-						<div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-							<svg
-								fill="none"
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								className="w-10 h-10"
-								viewBox="0 0 24 24"
-							>
-								<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-								<circle cx="12" cy="7" r="4"></circle>
-							</svg>
-						</div>
-						<div className="flex-grow">
-							<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-								Specialty Painting Services
-							</h2>
+              <img
+                src="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1756259567/roll-on-painting/Marketing_emailBlog_post_header_7_njlixn.webp"
+                alt="Painted living room with orange trim and white walls in Edmonton home renovation"
+                loading="lazy"
+                className="mb-4 h-96 w-full rounded-md object-cover"
+              />
+            </picture>
 
-							<p className="leading-relaxed text-base  ">
-								Specialized Edmonton painting services including popcorn ceiling removal, wallpaper
-								removal, eco-friendly paints, color consultations, and custom finishes.
-							</p>
+            <div className="flex-grow">
+              <h2 className="mb-3 text-lg font-medium text-gray-900">
+                Interior House Painting Edmonton
+              </h2>
 
-							<a className="mt-3 text-indigo-500 inline-flex items-center">
-								Learn More
-								<svg
-									fill="none"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									className="w-4 h-4 ml-2"
-									viewBox="0 0 24 24"
-								>
-									<path d="M5 12h14M12 5l7 7-7 7"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-					{/* Specialty Painting */}
-					<div className="p-4 md:w-1/2 flex flex-col text-center items-center">
-						<div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-							<svg
-								fill="none"
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								className="w-10 h-10"
-								viewBox="0 0 24 24"
-							>
-								<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-								<circle cx="12" cy="7" r="4"></circle>
-							</svg>
-						</div>
-						<div className="flex-grow">
-							<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-								Specialty Painting Services
-							</h2>
+              <p className="text-base leading-relaxed">
+                Professional interior house painting services for Edmonton homes
+                including walls, ceilings, trim, cabinets, and specialty
+                finishes with guaranteed quality craftsmanship results.
+              </p>
 
-							<p className="leading-relaxed text-base  ">
-								Specialized Edmonton painting services including popcorn ceiling removal, wallpaper
-								removal, eco-friendly paints, color consultations, and custom finishes.
-							</p>
+              <a className="mt-3 inline-flex items-center text-indigo-500">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* Exterior House Painting */}
+          <div className="flex max-w-[500px] flex-col items-center p-4 text-center sm:text-left">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1755894897/roll-on-painting/residential-exterior-house-being-painted-1-1_h259gd.jpg"
+              />
 
-							<a className="mt-3 text-indigo-500 inline-flex items-center">
-								Learn More
-								<svg
-									fill="none"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									className="w-4 h-4 ml-2"
-									viewBox="0 0 24 24"
-								>
-									<path d="M5 12h14M12 5l7 7-7 7"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-				<button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-					Button
-				</button>
-			</div>
-		</section>
-	)
+              <source
+                media="(min-width: 640px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1755894897/roll-on-painting/residential-exterior-house-being-painted-1-1_h259gd.jpg"
+              />
+
+              <img
+                src="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1755894897/roll-on-painting/residential-exterior-house-being-painted-1-1_h259gd.jpg"
+                alt="Painted living room with orange trim and white walls in Edmonton home renovation"
+                loading="lazy"
+                className="mb-4 h-96 w-full rounded-md object-cover"
+              />
+            </picture>
+            <div className="flex-grow">
+              <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
+                Exterior Home Painting Services
+              </h2>
+              <p className="text-base leading-relaxed">
+                Professional exterior home painting services for Edmonton
+                properties including house siding, decks, fences, garage doors,
+                and pressure washing with weatherproof protection guaranteed.
+              </p>
+              <a className="mt-3 inline-flex items-center text-indigo-500">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* Specialty Painting */}
+          <div className="flex max-w-[500px] flex-col items-center p-4 text-center sm:text-left">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,w_500/v1756255543/roll-on-painting/goldalamode-kitchen-reveal-before-2f179d741f694971820d09de0ba8adc3_vn2k7e.jpg"
+              />
+
+              <source
+                media="(min-width: 640px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/c_scale,w_500/v1756255543/roll-on-painting/goldalamode-kitchen-reveal-before-2f179d741f694971820d09de0ba8adc3_vn2k7e.jpg"
+              />
+
+              <img
+                src="https://res.cloudinary.com/jimbits/image/upload/c_scale,w_500/v1756255543/roll-on-painting/goldalamode-kitchen-reveal-before-2f179d741f694971820d09de0ba8adc3_vn2k7e.jpg"
+                alt="Painted living room with orange trim and white walls in Edmonton home renovation"
+                loading="lazy"
+                className="mb-4 h-96 w-full rounded-md object-cover"
+              />
+            </picture>
+            <div className="flex-grow">
+              <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
+                Specialty Painting Services
+              </h2>
+
+              <p className="text-base leading-relaxed">
+                Specialized Edmonton painting services including popcorn ceiling
+                removal, wallpaper removal, eco-friendly paints, color
+                consultations, and custom finishes.
+              </p>
+
+              <a className="mt-3 inline-flex items-center text-indigo-500">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* Other Services */}
+          <div className="flex max-w-[500px] flex-col items-center p-4 text-center sm:text-left">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcSet=" https://res.cloudinary.com/jimbits/image/upload/v1756259043/roll-on-painting/wdg-blog-pressure-washing-deck_pich1k.webp"
+              />
+
+              <source
+                media="(min-width: 640px)"
+                srcSet="https://res.cloudinary.com/jimbits/image/upload/v1756259043/roll-on-painting/wdg-blog-pressure-washing-deck_pich1k.webp"
+              />
+
+              <img
+                src=" https://res.cloudinary.com/jimbits/image/upload/v1756259043/roll-on-painting/wdg-blog-pressure-washing-deck_pich1k.webp"
+                alt="Painted living room with orange trim and white walls in Edmonton home renovation"
+                loading="lazy"
+                className="mb-4 h-96 w-full rounded-md object-cover"
+              />
+            </picture>
+
+            <div className="flex-grow">
+              <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
+                Additional Services
+              </h2>
+
+              <p className="text-base leading-relaxed">
+                Specialized Edmonton painting services including popcorn ceiling
+                removal, wallpaper removal, eco-friendly paints, color
+                consultations, and custom finishes.
+              </p>
+
+              <a className="mt-3 inline-flex items-center text-indigo-500">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button className="mx-auto mt-16 flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+          Button
+        </button>
+      </div>
+    </section>
+  );
 }
 
-export default Services
+export default Services;

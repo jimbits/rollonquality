@@ -1,30 +1,53 @@
-import {cn} from '@/lib/utils'
-import {ReactNode} from 'react'
-import {Menu, PhoneCallIcon} from 'lucide-react'
+import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
+import RollOnIcon from "@/icons/new.svg";
+import { Menu, PhoneCallIcon, User2Icon } from "lucide-react";
 interface AppBarProps {
-	children?: ReactNode
-	className?: string
+  children?: ReactNode;
+  className?: string;
 }
 
-function AppBar({className}: AppBarProps) {
-	return (
-		<div className={cn('', className)}>
-			<ul className={cn('flex justify-between items-center')}>
-				<li>
-					<PhoneCallIcon className="text-stone-600" />
-				</li>
-				<li>
-					<h1 className="text-center text-sm">
-						Edmonton House Painting Services{' '}
-						<span className="block">Interior & Exterior Residential Painters</span>
-					</h1>
-				</li>
-				<li>
-					<Menu className="text-stone-600" />
-				</li>
-			</ul>
-		</div>
-	)
+function AppBar({ className }: AppBarProps) {
+  return (
+    <div className={cn("", className)}>
+      <ul className={cn("flex items-center justify-between")}>
+        <li className=" ">
+          <RollOnIcon className="w-10 fill-indigo-600" />
+        </li>
+        <li>
+          <h1 className="text-center text-sm leading-4 font-semibold">
+            Edmonton House Painting Services
+            <span className="block">
+              Interior & Exterior Residential Painters
+            </span>
+          </h1>
+        </li>
+        <li className="">
+          <Menu className="text-stone-600 lg:hidden" />
+          <figure className="group hidden select-none lg:flex lg:flex-col lg:items-center">
+            <User2Icon className="group-hover:stroke-indigo-500" />
+            <figcaption className="text-xs group-hover:text-indigo-600">
+              customer login
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      {/* <nav className="hidden lg:mb-6 lg:flex lg:justify-between">
+        <figure>
+          <figcaption>brand</figcaption>
+        </figure>
+        <ul className="flex">
+          <li>kipsic singelit.</li>
+          <li>sit koptetur </li>
+          <li>ectetur adipis</li>
+          <li>amiput conse</li>
+          <li>shmet consectetur </li>
+          <li>ectetur adipis</li>
+        </ul>
+        <p>customer login</p>
+      </nav> */}
+    </div>
+  );
 }
 
-export default AppBar
+export default AppBar;
