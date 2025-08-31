@@ -12,7 +12,7 @@ export const defaultMetadata: Metadata = {
     "Edmonton painters, residential painting Edmonton, commercial painting Edmonton, interior painting, exterior painting, cabinet refinishing, drywall repair, eco friendly paint, painting contractors Edmonton",
   ],
   icons: {
-    icon: [{ url: "/brand/favicon.svg", type: "image/svg" }],
+    icon: [{ url: "/favicon.svg", type: "image/svg" }],
   },
   authors: [{ name: "James Foley" }],
   creator: "James Foley",

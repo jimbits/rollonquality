@@ -33,7 +33,7 @@ function Services() {
               />
 
               <img
-                src="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1756259567/roll-on-painting/Marketing_emailBlog_post_header_7_njlixn.webp"
+                src="https://res.cloudinary.com/jimbits/image/upload/f_auto,q_auto/v1755899506/roll-on-painting/remove-3_okddch.png"
                 alt="Painted living room with orange trim and white walls in Edmonton home renovation"
                 loading="lazy"
                 className="mb-4 h-96 w-full rounded-md object-cover"
@@ -84,7 +84,7 @@ function Services() {
                 src="https://res.cloudinary.com/jimbits/image/upload/c_scale,f_auto,h_500,q_auto/v1755894897/roll-on-painting/residential-exterior-house-being-painted-1-1_h259gd.jpg"
                 alt="Painted living room with orange trim and white walls in Edmonton home renovation"
                 loading="lazy"
-                className="mb-4 h-96 w-full rounded-md object-cover"
+                className="mb-4 h-96 w-[500px] rounded-md object-cover"
               />
             </picture>
             <div className="flex-grow">

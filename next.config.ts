@@ -22,11 +22,13 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
+    deviceSizes: [640, 768, 1024, 1280, 1536], // Tailwind Breakpoints
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Icon Image Sizes
     remotePatterns: [
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
-        pathname: "/jimbits/image/upload/**", // Allows all Cloudinary paths
+        pathname: "/jimbits/image/upload/**/**/ncs-painting-edmonton", // Allows all Cloudinary paths
       },
     ],
   },

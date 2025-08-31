@@ -12,20 +12,13 @@ function AppBar({ className }: AppBarProps) {
     <div className={cn("", className)}>
       <ul className={cn("flex items-center justify-between")}>
         <li className=" ">
-          <RollOnIcon className="w-10 fill-indigo-600" />
+          <RollOnIcon className="w-10 fill-slate-900" />
         </li>
-        <li>
-          <h1 className="text-center text-sm leading-4 font-semibold">
-            Edmonton House Painting Services
-            <span className="block">
-              Interior & Exterior Residential Painters
-            </span>
-          </h1>
-        </li>
+
         <li className="">
-          <Menu className="text-stone-600 lg:hidden" />
+          <Menu className="text-slate-900 lg:hidden" />
           <figure className="group hidden select-none lg:flex lg:flex-col lg:items-center">
-            <User2Icon className="group-hover:stroke-indigo-500" />
+            <User2Icon className="group-hover:stroke-slate-900" />
             <figcaption className="text-xs group-hover:text-indigo-600">
               customer login
             </figcaption>
